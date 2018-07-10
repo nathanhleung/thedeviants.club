@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  padding: 50px;
+  min-height: 100%;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(./images/crab-nebula.jpg);
+  background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+  font-family: Poppins;
+
+  @media (max-width: 767px) {
+    padding: 15px;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+#main {
+  width: 100%;
+  align-self: center;
+  margin: auto 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+#cover {
+  width: 30%;
+  margin-bottom: 15px;
+  height: auto;
+  border: 1px solid white;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+p.lead {
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: transparent;
+  padding: 15px;
+  text-transform: uppercase;
+  color: #eee;
+  border: 2px solid #eee;
+  cursor: pointer;
+
+  &[disabled] {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+#footer {
+  align-self: center;
+  opacity: 0.75;
+  font-size: 0.75rem;
+}

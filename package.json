@@ -5,9 +5,12 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "dev": "http-server src"
+    "dev": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
   },
   "devDependencies": {
-    "http-server": "^0.11.1"
-  }
+    "parcel-bundler": "^1.9.4",
+    "postcss-nested": "^3.0.0"
+  },
+  "dependencies": {}
 }

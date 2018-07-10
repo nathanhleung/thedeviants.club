@@ -1,6 +1,6 @@
 [build]
-  publish = "src"
-  command = ""
+  publish = "dist"
+  command = "yarn build"
 
 [build.environment]
   NODE_VERSION = "8"
