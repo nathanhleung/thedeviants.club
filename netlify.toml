@@ -1,0 +1,7 @@
+[build]
+  publish = "src"
+  command = ""
+
+[build.environment]
+  NODE_VERSION = "8"
+  YARN_VERSION = "1.7.0"

@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "UNLICENSED",
   "private": true,
+  "scripts": {
+    "dev": "http-server src"
+  },
   "devDependencies": {
     "http-server": "^0.11.1"
   }
