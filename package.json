@@ -5,12 +5,15 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "dev": "parcel src/index.html --open",
-    "build": "parcel build src/index.html"
+    "dev": "parcel src/*.html --open",
+    "build": "parcel build src/*.html"
   },
   "devDependencies": {
     "parcel-bundler": "^1.9.4",
     "postcss-nested": "^3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "countdown": "^2.6.0",
+    "left-pad": "^1.3.0"
+  }
 }

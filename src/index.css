@@ -29,24 +29,47 @@ html, body {
   @media (max-width: 767px) {
     padding: 15px;
   }
-
-  @media (min-width: 768px) {
-    padding-left: 30%;
-    padding-right: 30%;
-  }
 }
 
 #main {
   width: 100%;
   align-self: center;
-  margin: auto 0;
+  margin: 0;
   flex: 1;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
   @media (max-width: 767px) {
     width: 100%;
+  }
+}
+
+#side {
+  flex-basis: 30%;
+
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+#countdown-container {
+  text-align: center;
+  flex: 1;
+
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
+}
+
+#countdown {
+  font-size: 10rem;
+  padding: 15px;
+
+  @media (max-width: 767px) {
+    font-size: 8rem;
   }
 }
 
@@ -65,7 +88,8 @@ p.lead {
   font-size: 1.5rem;
 }
 
-button {
+a.btn, button {
+  text-decoration: none;
   background-color: transparent;
   padding: 15px;
   text-transform: uppercase;
@@ -86,4 +110,47 @@ button {
   align-self: center;
   opacity: 0.75;
   font-size: 0.75rem;
+}
+
+#drop #main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+
+  > * {
+    flex-basis: 50%;
+
+    @media (max-width: 767px) {
+      flex-basis: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+#drop-text {
+  padding: 40px;
+  line-height: 1.25;
+
+  p {
+    font-size: 1.5rem;
+
+    @media (max-width: 767px) {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 10px;
+    padding-top: 0;
+    margin-top: -50px;
+  }
 }
