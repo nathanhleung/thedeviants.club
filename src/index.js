@@ -1,5 +1,10 @@
+window.location.replace('/drop');
+
+/*
 const makeCountdown = require('countdown');
 const leftPad = require('left-pad');
+
+console.log(require('countdown'))
 
 // Midnight on 7/13/2018
 const DROP_DATE = 1531454400000;
@@ -19,3 +24,4 @@ function tick() {
 tick();
 
 setInterval(tick, 1000);
+*/
